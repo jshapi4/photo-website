@@ -1,7 +1,7 @@
 // src/components/ContactForm.js
 import React, { useState } from "react";
 import { submitContactForm } from "../services/api";
-// import "./ContactForm.css";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -105,6 +105,7 @@ const ContactForm = () => {
                 value={formData.first_name}
                 onChange={handleChange}
                 className={errors.first_name ? "error" : ""}
+                placeholder="Enter your first name"
               />
               {errors.first_name && (
                 <span className="error-text">{errors.first_name}</span>
@@ -120,6 +121,7 @@ const ContactForm = () => {
                 value={formData.last_name}
                 onChange={handleChange}
                 className={errors.last_name ? "error" : ""}
+                placeholder="Enter your last name"
               />
               {errors.last_name && (
                 <span className="error-text">{errors.last_name}</span>
@@ -136,6 +138,7 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               className={errors.email ? "error" : ""}
+              placeholder="e.g., name@example.com"
             />
             {errors.email && <span className="error-text">{errors.email}</span>}
           </div>
@@ -148,6 +151,7 @@ const ContactForm = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
+              placeholder="(123) 456-7890"
             />
           </div>
 

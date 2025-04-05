@@ -1,7 +1,6 @@
-// src/components/Header.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./Header.css";
+import "./Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +9,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <h1>Photography Studio</h1>
+          <h1>Emi Shapiro Photography Studio</h1>
         </Link>
 
         <button

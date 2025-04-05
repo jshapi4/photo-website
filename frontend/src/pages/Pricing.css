@@ -1,0 +1,12 @@
+.pricing-page {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
