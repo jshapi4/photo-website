@@ -1,6 +1,6 @@
 // src/pages/About.jsx
 import React from "react";
-import "./About.css";
+import "../styles/About.css";
 import headshot from "../assets/Emi-Camera.jpg";
 
 const About = () => {

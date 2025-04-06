@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import { Thumbnails } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import "./Portfolio.css";
+import "../styles/Portfolio.css";
 
 const images = [
   "/assets/portfolio1.jpg",

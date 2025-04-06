@@ -2,7 +2,7 @@
 import React from "react";
 import pricingPackages from "../data/pricingData";
 import PricingCard from "../components/PricingCard";
-import "./Pricing.css";
+import "../styles/Pricing.css";
 
 const Pricing = () => {
   return (

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import "./Gallery.css";
+import "../styles/Gallery.css";
 
 const Gallery = ({ photos, onProtectImages = true }) => {
   const [images, setImages] = useState([]);

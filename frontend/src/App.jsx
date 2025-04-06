@@ -9,7 +9,6 @@ import Testimonials from "./pages/Testimonials";
 import Pricing from "./pages/Pricing";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
-import "./App.css";
 
 function App() {
   return (

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Header.css";
+import { Link, useLocation } from "react-router-dom";
+
+import "../styles/Header.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <h1>Emi Shapiro Photography Studio</h1>
+          <h1>Emi Shapiro Photography</h1>
         </Link>
 
         <button
@@ -22,37 +24,73 @@ const Header = () => {
         <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/"
+                onClick={() => setMenuOpen(false)}
+                className={location.pathname === "/" ? "active-link" : ""}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/portfolio"
+                onClick={() => setMenuOpen(false)}
+                className={
+                  location.pathname === "/portfolio" ? "active-link" : ""
+                }
+              >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/about"
+                onClick={() => setMenuOpen(false)}
+                className={location.pathname === "/about" ? "active-link" : ""}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/testimonials" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/testimonials"
+                onClick={() => setMenuOpen(false)}
+                className={
+                  location.pathname === "/testimonials" ? "active-link" : ""
+                }
+              >
                 Testimonials
               </Link>
             </li>
             <li>
-              <Link to="/pricing" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/pricing"
+                onClick={() => setMenuOpen(false)}
+                className={
+                  location.pathname === "/pricing" ? "active-link" : ""
+                }
+              >
                 Pricing
               </Link>
             </li>
             <li>
-              <Link to="/faqs" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/faqs"
+                onClick={() => setMenuOpen(false)}
+                className={location.pathname === "/faqs" ? "active-link" : ""}
+              >
                 FAQs
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className={
+                  location.pathname === "/contact" ? "active-link" : ""
+                }
+              >
                 Contact
               </Link>
             </li>

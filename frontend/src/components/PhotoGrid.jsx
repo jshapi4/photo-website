@@ -1,7 +1,7 @@
 // src/components/PhotoGrid.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import "./PhotoGrid.css";
+import "../styles/PhotoGrid.css";
 
 const PhotoGrid = ({ photos, onPhotoClick }) => {
   if (!photos || photos.length === 0) {

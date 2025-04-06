@@ -1,0 +1,216 @@
+/* General Header Styling */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Important for absolute positioning of child elements */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #000;
+}
+
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  z-index: 101; /* Higher than the nav menu */
+}
+
+/* Hamburger styling */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* Open state */
+.hamburger.open {
+  background: transparent;
+}
+
+.hamburger.open::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Desktop Navigation */
+.main-nav {
+  display: flex;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a.active-link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-weight: 600;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  /* Removed padding, display: block and width: 100% from here */
+  position: relative; /* For the hover underline effect */
+}
+
+/* Nicer hover effect for desktop */
+.main-nav a:hover {
+  color: #007bff;
+}
+
+.main-nav a.active-link:hover::after {
+  width: 0; /* disables hover underline animation for the ACTIVE LINK */
+}
+
+/* Optional: Add an underline effect on hover for desktop */
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  /* Mobile Navigation - Overlay */
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it right below the header */
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .main-nav li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .main-nav li:last-child {
+    border-bottom: none;
+  }
+
+  /* Show the hamburger button */
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu-btn:hover {
+    background-color: #f8f8f8; /* or whatever fits your theme */
+    border-radius: 4px; /* optional for a smoother look */
+  }
+
+  /* Override desktop styles for mobile */
+  .main-nav a {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Different hover effect for mobile */
+  .main-nav a:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+  }
+
+  /* Remove the underline effect for mobile */
+  .main-nav a::after {
+    display: none;
+  }
+}

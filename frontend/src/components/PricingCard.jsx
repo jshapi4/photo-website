@@ -1,7 +1,7 @@
 // src/components/PricingCard.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./PricingCard.css";
+import "../styles/PricingCard.css";
 
 const PricingCard = ({ package: pricingPackage }) => {
   return (
