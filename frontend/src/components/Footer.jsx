@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="social-links">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/emiliashapiro_photography/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,8 +39,8 @@ const Footer = () => {
 
         <div className="copyright">
           <p>
-            &copy; {new Date().getFullYear()} Emi Shapiro Photography Studio.
-            All rights reserved.
+            &copy; {new Date().getFullYear()} Emilia Shapiro Photography. All
+            rights reserved.
           </p>
         </div>
       </div>

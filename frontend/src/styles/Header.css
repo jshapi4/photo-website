@@ -17,10 +17,17 @@
   position: relative; /* Important for absolute positioning of child elements */
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .logo h1 {
   margin: 0;
   font-size: 1.75rem;
   color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .mobile-menu-btn {

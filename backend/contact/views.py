@@ -9,6 +9,7 @@ from .serializers import ContactSubmissionSerializer
 @api_view(['POST'])
 def submit_contact_form(request):
     if request.method == 'POST':
+        # ensure front end data is passed through correctly
         serializer = ContactSubmissionSerializer(data=request.data)
         
         if serializer.is_valid():
@@ -17,7 +18,12 @@ def submit_contact_form(request):
 
             # Send email notification to the admin (or any email address)
             subject = f"New contact form submission from {contact_submission.first_name} {contact_submission.last_name}"
-            email_body = f"Message from {contact_submission.first_name} {contact_submission.last_name}:\n\n{contact_submission.message}"
+# Send email notification to the admin (or any email address)
+            subject = f"New contact form submission from {contact_submission.first_name} {contact_submission.last_name}"
+            email_body = f"Message from {contact_submission.first_name} {contact_submission.last_name}:\n\n{contact_submission.message}\n\n"
+            email_body += f"Phone: {contact_submission.phone}\n"
+            email_body += f"Pricing Package: {contact_submission.pricing_package}"
+            
             send_mail(
                 subject,
                 email_body,

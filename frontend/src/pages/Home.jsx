@@ -16,20 +16,20 @@ const Home = () => {
           showStatus={false}
           interval={4000}
           transitionTime={1000}
-          dynamicHeight={false}
+          dynamicHeight={true}
           emulateTouch
         >
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel1.jpg"
+              src="/images/carousel0.jpg"
               alt="Family moment"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel2.jpg"
+              src="/images/carousel1.jpg"
               alt="Newborn snuggles"
             />
           </div>
@@ -59,10 +59,10 @@ const Home = () => {
 
       {/* Intro Text */}
       <div className="home-intro">
-        <h1>Capturing the heart of your family</h1>
+        <h2>Capturing the heart of your family</h2>
         <p>
           Whether it's your newborn's sleepy smile, the joy of toddlers at play,
-          or the tender glow of motherhood, I'm here to preserve those fleeting
+          or the glow of motherhood, I'm here to preserve those fleeting
           moments. Every photo is a story—and I'd be honored to tell yours.
         </p>
       </div>

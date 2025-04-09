@@ -22,7 +22,10 @@ const PricingCard = ({ package: pricingPackage }) => {
           ))}
       </ul>
 
-      <Link to="/contact" className="book-now-btn">
+      <Link
+        to={`/contact?packageButton=${encodeURIComponent(pricingPackage.name)}`}
+        className="book-now-btn"
+      >
         Book Now
       </Link>
     </div>
