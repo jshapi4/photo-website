@@ -19,16 +19,18 @@ jobs:
           node-version: "20" # Set the Node.js version (use the version that your project uses)
 
       - name: Install dependencies
+        working-directory: ./frontend # working dir
         run: npm install # Install project dependencies
 
       - name: Build the frontend
+        working-directory: ./frontend # Set the working directory to frontend
         run: npm run build # This will run `vite build` or `react-scripts build` depending on your setup
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3 # GitHub Actions for deploying to GitHub Pages
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically provides this token for authentication
-          publish_dir: ./dist # Path to the build directory (Vite outputs to `dist/` by default)
+          publish_dir: ./frontend/dist # Path to the build directory (Vite outputs to `dist/` by default)
           branch: gh-pages # The branch to deploy to (GitHub Pages uses this branch)
           user_name: "J. Shapiro" # The name to appear in the commit
           user_email: "jshapi4@wgu.edu" # The email to appear in the commit
