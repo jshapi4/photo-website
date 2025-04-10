@@ -30,5 +30,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically provides this token for authentication
           publish_dir: ./dist # Path to the build directory (Vite outputs to `dist/` by default)
           branch: gh-pages # The branch to deploy to (GitHub Pages uses this branch)
-          user_name: "jshapi4" # The name to appear in the commit
+          user_name: "J. Shapiro" # The name to appear in the commit
           user_email: "jshapi4@wgu.edu" # The email to appear in the commit
