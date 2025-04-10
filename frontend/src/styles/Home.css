@@ -1,7 +1,6 @@
 /* Home page wrapper */
 .home-page {
   padding: 2rem;
-  background-color: #fffdf9;
 }
 
 /* Intro section */
@@ -49,7 +48,7 @@
 }
 
 .polaroid-tile {
-  background: #fff;
+  background: #f6ecf0;
   border: 1px solid #eee;
   padding: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);

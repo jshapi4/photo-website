@@ -1,10 +1,7 @@
-.about-page h1 {
-  text-align: left;
-}
-
 .about-page {
   padding: 2rem;
-  background-color: #fff;
+  max-width: 700px; /* Restrict overall width */
+  margin: 0 auto; /* Centers the content */
 }
 
 .about-content {
@@ -20,7 +17,8 @@
   font-size: 1.05rem;
   line-height: 1.6;
   color: #444;
-  text-align: left;
+  text-align: left; /* Keeps text left-aligned */
+  margin: 0 auto; /* Centers the block within its container */
 }
 
 .about-image img {

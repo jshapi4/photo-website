@@ -1,6 +1,6 @@
 /* General Header Styling */
 .header {
-  background-color: #fff;
+  background-color: var(--pink-medium);
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -114,7 +114,7 @@
 
 /* Nicer hover effect for desktop */
 .main-nav a:hover {
-  color: #007bff;
+  color: var(--mauve);
 }
 
 .main-nav a.active-link:hover::after {
@@ -130,7 +130,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #007bff;
+  background-color: #aa647b;
   transition: width 0.3s ease;
 }
 

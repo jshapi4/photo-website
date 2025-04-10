@@ -24,7 +24,7 @@
 
 .faq-card {
   background: #f9f9f9;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid var(--mauve);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
@@ -51,7 +51,7 @@
 
 .arrow {
   font-size: 1rem;
-  color: #007bff;
+  color: var(--mauve);
 }
 
 .faq-answer {

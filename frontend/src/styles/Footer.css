@@ -1,9 +1,9 @@
 .footer {
-  background-color: #f8f8f8;
-  border-top: 1px solid #ddd;
+  background-color: var(--pink-medium);
   padding: 1rem;
-  color: #333;
   font-size: 0.85rem;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
 }
 
 .footer-container {
@@ -15,8 +15,6 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid #ddd;
-  padding-top: 1rem;
   text-align: center;
 }
 
@@ -27,5 +25,5 @@
 }
 
 .social-links a:hover {
-  color: #007bff;
+  color: var(--mauve);
 }

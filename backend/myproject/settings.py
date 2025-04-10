@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from dotenv import load_dotenv
-import dj_database_url
+# import dj_database_url
 import os
 
 load_dotenv()  # Load environment variables from .env file
@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nvw*^^trz@7$bslw015u9_z-cktl0_l6rdd(o(+z(^2sh7$b!9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'emi-photo-site-backend.onrender.com',
@@ -69,6 +69,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "http://localhost:3000",
+    "http://192.168.1.70:3000"
 ]
 
 ROOT_URLCONF = 'myproject.urls'

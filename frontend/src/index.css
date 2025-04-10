@@ -3,14 +3,23 @@
   --font-primary: "Helvetica Neue", sans-serif;
   --font-secondary: "Arial", sans-serif;
   --font-serif: "Georgia", serif;
+  --pink-light: #fff7fa;
+  --pink-old: #ffe0ea;
+  --pink-medium: #e2ced4;
+  --champagne: #fffcf6;
+  --pink-hover: #bd889c;
+  --gray-dark: #333;
+  --gray-medium: #808080;
+  --mauve: #aa647b;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: var(--font-serif);
-  background-color: #f4f4f4;
+  background-color: var(--champagne);
   color: #333;
+  min-height: 100vh;
 }
 
 h1,
@@ -31,15 +40,15 @@ h6 {
 }
 
 button {
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem; /* Shorthand with rem units */
   border: none;
-  background-color: #79b3f1;
-  color: white;
+  background-color: var(--pink-main);
+  color: var(--gray-dark);
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #bd889c;
 }

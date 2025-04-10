@@ -1,7 +1,8 @@
 /* src/pages/Portfolio.css */
 .portfolio-page {
   padding: 2rem;
-  background-color: #f9f9f9;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .portfolio-page h1 {
