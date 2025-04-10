@@ -29,7 +29,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3 # GitHub Actions for deploying to GitHub Pages
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically provides this token for authentication
+          github_token: ${{ secrets.GH_TOKEN }} # GitHub automatically provides this token for authentication
           publish_dir: ./frontend/dist # Path to the build directory (Vite outputs to `dist/` by default)
           publish_branch: gh-pages # The branch to deploy to (GitHub Pages uses this branch)
           user_name: "J. Shapiro" # The name to appear in the commit
