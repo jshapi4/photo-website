@@ -18,13 +18,12 @@ jobs:
         with:
           node-version: "20" # Set the Node.js version (use the version that your project uses)
 
-      - name: Install dependencies
-        working-directory: ./frontend # working dir
-        run: npm install # Install project dependencies
-
-      - name: Build the frontend
-        working-directory: ./frontend # Set the working directory to frontend
-        run: npm run build # This will run `vite build` or `react-scripts build` depending on your setup
+      # Install dependencies and build the project
+      - name: Install dependencies and build
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3 # GitHub Actions for deploying to GitHub Pages
