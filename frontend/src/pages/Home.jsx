@@ -36,8 +36,8 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel3.jpg"
-              alt="Maternity glow"
+              src="/assets/fam-in-woods.jpg"
+              alt="Family in the woods"
             />
           </div>
           <div>
@@ -70,19 +70,22 @@ const Home = () => {
       {/* Section Tiles */}
       <div className="polaroid-section">
         <Link to="/about" className="polaroid-tile">
-          <img src="/images/about.jpg" alt="About" />
+          <img src="/images/about.jpg" alt="About Polaroid" />
           <div className="polaroid-label">About</div>
         </Link>
         <Link to="/portfolio" className="polaroid-tile">
-          <img src="/assets/dad-and-kid-on-shoulders.jpg" alt="Portfolio" />
+          <img src="/assets/baby-boy-and-bubble.jpg" alt="Portfolio Polaroid" />
           <div className="polaroid-label">Portfolio</div>
         </Link>
         <Link to="/testimonials" className="polaroid-tile">
-          <img src="/images/testimonials.jpg" alt="Testimonials" />
+          <img
+            src="/assets/dad-and-kid-on-shoulders.jpg"
+            alt="Testimonials Polaroid"
+          />
           <div className="polaroid-label">Testimonials</div>
         </Link>
         <Link to="/pricing" className="polaroid-tile">
-          <img src="/images/pricing.jpg" alt="Pricing" />
+          <img src="/images/pricing.jpg" alt="Pricing Polaroid" />
           <div className="polaroid-label">Pricing</div>
         </Link>
       </div>
