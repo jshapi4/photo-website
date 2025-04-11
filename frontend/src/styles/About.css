@@ -1,6 +1,6 @@
 .about-page {
   padding: 2rem;
-  max-width: 700px; /* Restrict overall width */
+  max-width: 800px; /* Restrict overall width */
   margin: 0 auto; /* Centers the content */
 }
 
@@ -22,7 +22,7 @@
 }
 
 .about-image img {
-  width: 280px;
+  width: 350px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);

@@ -11,22 +11,29 @@ const About = () => {
         <div className="about-text">
           <p>
             Hi! I'm Emi Shapiro, a family photographer based in Sacramento,
-            California. I've loved photography ever since I was a teenager with
-            a hand-me-down film camera in my hands. What started as a passion
-            has grown into a dream I'm now bringing to life—building my own
-            photography business and capturing heartfelt, meaningful moments for
-            families along the way.
+            California. What started as a passion has grown into a dream I'm now
+            bringing to life—building my own photography business and capturing
+            the profound connections between family members along the way.
           </p>
           <p>
-            I specialize in newborn, family, and motherhood
-            photography—capturing the love, connection, and everyday magic that
-            make these moments so special. My approach is relaxed and natural,
-            helping you feel at ease so we can create timeless images that
-            reflect your genuine story.
+            I specialize in newborn, family, and motherhood photography—focusing
+            on those tender moments of love and connection that define our most
+            cherished relationships. Since having my own baby, I've been
+            documenting every precious milestone of my little one's journey,
+            discovering the indescribable joy of freezing time to create lasting
+            memories that speak directly to the heart. This personal experience
+            has deepened my appreciation for preserving these fleeting moments
+            for other families.
           </p>
           <p>
-            When I am not behind the lens, I am usually spending time with
-            family, or planning our next travel adventure. Let's create
+            My approach is relaxed and natural, helping you feel at ease so we
+            can create timeless images that authentically reflect the bonds you
+            share. I believe in capturing not just how you look, but how you
+            feel when you're together.
+          </p>
+          <p>
+            When I am not behind the lens, I am usually spending time with my
+            own family, or planning our next travel adventure. Let's create
             something beautiful together!
           </p>
         </div>
