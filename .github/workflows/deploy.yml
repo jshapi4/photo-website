@@ -33,4 +33,3 @@ jobs:
           publish_branch: gh-pages # The branch to deploy to (GitHub Pages)
           user_name: "J. Shapiro" # The name to appear in the commit
           user_email: "jshapi4@wgu.edu" # The email to appear in the commit
-          add_cname: true # Automatically includes the CNAME file if needed
