@@ -15,7 +15,7 @@ const Footer = () => {
             Instagram
           </a>
           <a
-            href="mailto:casas.mariaemilia@gmail.com"
+            href="mailto:emishapirophotography@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className="copyright">
           <p>
-            &copy; {new Date().getFullYear()} Emilia Shapiro Photography. All
+            &copy; {new Date().getFullYear()} Emi Shapiro Photography. All
             rights reserved.
           </p>
         </div>
