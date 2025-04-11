@@ -22,15 +22,15 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel0.jpg"
-              alt="Family moment"
+              src="/assets/dad-kid-horse-1.jpg"
+              alt="Dad, his kid, and a horse"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel1.jpg"
-              alt="Newborn snuggles"
+              src="/assets/mom-and-baby-1.jpg"
+              alt="Mom and her baby"
             />
           </div>
           <div>
@@ -74,7 +74,7 @@ const Home = () => {
           <div className="polaroid-label">About</div>
         </Link>
         <Link to="/portfolio" className="polaroid-tile">
-          <img src="/images/portfolio.jpg" alt="Portfolio" />
+          <img src="/assets/dad-and-kid-on-shoulders.jpg" alt="Portfolio" />
           <div className="polaroid-label">Portfolio</div>
         </Link>
         <Link to="/testimonials" className="polaroid-tile">
