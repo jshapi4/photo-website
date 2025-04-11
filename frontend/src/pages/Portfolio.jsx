@@ -8,13 +8,13 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "../styles/Portfolio.css";
 
 const images = [
-  "/assets/portfolio1.jpg",
+  "/assets/baby-walking-proudly.jpg",
   "/assets/portfolio2.jpg",
   "/assets/portfolio3.jpg",
   "/assets/portfolio4.jpg",
   "/assets/portfolio5.jpg",
   "/assets/portfolio6.jpg",
-  "/assets/portfolio7.jpg",
+  "/assets/boy-on-toes-reaching.jpg",
   "/assets/portfolio8.jpg",
   "/assets/portfolio9.jpg",
   "/assets/portfolio10.jpg",
@@ -22,8 +22,8 @@ const images = [
   "/assets/portfolio12.jpg",
   "/assets/portfolio13.jpg",
   "/assets/portfolio14.jpg",
-  "/assets/portfolio15.jpg",
-  "/assets/portfolio16.jpg",
+  "/assets/family-and-purple-flowers.jpg",
+  "/assets/mom-pointing.jpg",
   "/assets/portfolio17.jpg",
   "/assets/portfolio18.jpg",
   "/assets/portfolio19.jpg",

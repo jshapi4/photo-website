@@ -43,15 +43,15 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel4.jpg"
-              alt="Joyful toddlers"
+              src="/assets/boy-on-toes-reaching.jpg"
+              alt="Boy on toes reaching towards plant"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/images/carousel5.jpg"
-              alt="Quiet cuddles"
+              src="/assets/baby-smiling-on-moms-lap.jpg"
+              alt="Baby on mom's lap"
             />
           </div>
         </Carousel>
