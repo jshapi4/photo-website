@@ -85,7 +85,7 @@ const Home = () => {
           <div className="polaroid-label">Testimonials</div>
         </Link>
         <Link to="/pricing" className="polaroid-tile">
-          <img src="/images/pricing.jpg" alt="Pricing Polaroid" />
+          <img src="/assets/emi-pricing-photo.jpg" alt="Pricing Polaroid" />
           <div className="polaroid-label">Pricing</div>
         </Link>
       </div>

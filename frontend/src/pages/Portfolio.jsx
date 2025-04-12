@@ -10,24 +10,13 @@ import "../styles/Portfolio.css";
 const images = [
   "/assets/baby-walking-proudly.jpg",
   "/assets/baby-boy-and-bubble.jpg",
-  "/assets/portfolio3.jpg",
   "/assets/mom-swings-boy.jpg",
-  "/assets/portfolio5.jpg",
-  "/assets/portfolio6.jpg",
   "/assets/boy-on-toes-reaching.jpg",
-  "/assets/portfolio8.jpg",
   "/assets/mom-and-son-faces.jpg",
-  "/assets/portfolio10.jpg",
   "/assets/mom-boy-on-log.jpg",
-  "/assets/portfolio12.jpg",
-  "/assets/portfolio13.jpg",
-  "/assets/portfolio14.jpg",
   "/assets/family-and-purple-flowers.jpg",
   "/assets/mom-pointing.jpg",
-  "/assets/portfolio17.jpg",
   "/assets/mom-bubbles.jpg",
-  "/assets/portfolio19.jpg",
-  "/assets/portfolio20.jpg",
 ];
 
 const Portfolio = () => {
