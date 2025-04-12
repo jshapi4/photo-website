@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="social-links">
           <a
-            href="https://www.instagram.com/emiliashapiro_photography/"
+            href="https://www.instagram.com/emishapiro_photography/"
             target="_blank"
             rel="noopener noreferrer"
           >
