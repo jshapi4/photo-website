@@ -28,13 +28,6 @@ const Footer = () => {
           >
             Facebook
           </a>
-          <a
-            href="https://pinterest.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pinterest
-          </a>
         </div>
 
         <div className="copyright">
