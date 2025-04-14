@@ -129,7 +129,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #aa647b;
+  background-color: var(--mauve);
   transition: width 0.3s ease;
 }
 
@@ -197,7 +197,7 @@
   }
 
   .mobile-menu-btn:hover {
-    background-color: #f8f8f8; /* or whatever fits your theme */
+    background-color: #f8f8f8;
     border-radius: 4px; /* optional for a smoother look */
   }
 
@@ -212,7 +212,7 @@
   /* Different hover effect for mobile */
   .main-nav a:hover {
     background-color: #f1f1f1;
-    color: #007bff;
+    color: var(--mauve);
   }
 
   /* Remove the underline effect for mobile */
