@@ -29,6 +29,13 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
+              src="/assets/land-park-water.jpg"
+              alt="Family in Land Park walking by the water"
+            />
+          </div>
+          <div>
+            <img
+              className="carousel-image"
               src="/assets/mom-and-baby-1.jpg"
               alt="Mom and her baby"
             />
@@ -36,7 +43,7 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/assets/fam-in-woods.jpg"
+              src="/assets/dad-and-mom-gaze.jpg"
               alt="Family in the woods"
             />
           </div>
