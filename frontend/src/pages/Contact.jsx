@@ -93,8 +93,16 @@ const Contact = () => {
       }
     } catch (error) {
       console.error("Form submission error:", error);
+
+      const serverMessage =
+        error.response?.data?.error ||
+        error.response?.data?.detail ||
+        error.message;
+
       setSubmitError(
-        "There was an error submitting your message. Please try again."
+        `Submission failed. Please try reaching us directly at our email below!\n\nError: ${
+          serverMessage || "An unexpected error occurred."
+        }`
       );
     } finally {
       setSubmitting(false);
@@ -159,8 +167,6 @@ const Contact = () => {
           </div>
         ) : (
           <form className="contact-form" onSubmit={handleSubmit}>
-            {submitError && <div className="error-message">{submitError}</div>}
-
             {/* Name and Email Fields */}
             <div className="form-row">
               <div className="form-group">
@@ -276,6 +282,7 @@ const Contact = () => {
                 <span className="error-text">{errors.message}</span>
               )}
             </div>
+            {submitError && <div className="error-message">{submitError}</div>}
 
             <button type="submit" className="submit-btn" disabled={submitting}>
               {submitting ? "Sending..." : "Send Message"}

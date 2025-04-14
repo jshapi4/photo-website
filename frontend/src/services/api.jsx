@@ -1,9 +1,11 @@
 import axios from "axios";
 
 // Determine the base URL based on the current environment
+// old url from render: https://photo-website-backend.onrender.com/api
+
 const API_BASE_URL =
   import.meta.env.MODE === "production"
-    ? "https://photo-website-backend.onrender.com/api"
+    ? "https://emis-website-backend.fly.dev/api"
     : "http://localhost:8000/api";
 
 console.log("Using API base URL:", API_BASE_URL); // Helpful for debugging
