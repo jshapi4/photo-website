@@ -50,13 +50,6 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/assets/boy-on-toes-reaching.jpg"
-              alt="Boy on toes reaching towards plant"
-            />
-          </div>
-          <div>
-            <img
-              className="carousel-image"
               src="/assets/baby-smiling-on-moms-lap.jpg"
               alt="Baby on mom's lap"
             />
