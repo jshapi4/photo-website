@@ -84,13 +84,13 @@ const Home = () => {
           <img src="/assets/baby-boy-and-bubble.jpg" alt="Portfolio Polaroid" />
           <div className="polaroid-label">Portfolio</div>
         </Link>
-        <Link to="/testimonials" className="polaroid-tile">
+        {/* <Link to="/testimonials" className="polaroid-tile">
           <img
             src="/assets/dad-and-kid-on-shoulders.jpg"
             alt="Testimonials Polaroid"
           />
           <div className="polaroid-label">Testimonials</div>
-        </Link>
+        </Link> */}
         <Link to="/pricing" className="polaroid-tile">
           <img src="/assets/emi-pricing-photo.jpg" alt="Pricing Polaroid" />
           <div className="polaroid-label">Pricing</div>
