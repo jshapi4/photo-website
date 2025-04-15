@@ -1,11 +1,13 @@
 // src/pages/About.jsx
 import React from "react";
 import "../styles/About.css";
-import headshot from "../assets/Emi-Camera.jpg";
+import headshot from "/assets/Emi-Camera.jpg";
+import PageTitle from "../components/PageTitle";
 
 const About = () => {
   return (
     <div className="about-page">
+      <PageTitle title="About" />
       <h1>About Me</h1>
       <div className="about-content">
         <div className="about-text">

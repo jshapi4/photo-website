@@ -9,11 +9,12 @@ import Testimonials from "./pages/Testimonials";
 import Pricing from "./pages/Pricing";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Header />
         <main>
           <Routes>
@@ -24,6 +25,7 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

@@ -4,6 +4,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Thumbnails } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import PageTitle from "../components/PageTitle";
 
 import "../styles/Portfolio.css";
 
@@ -36,6 +37,8 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-page">
+      <PageTitle title="Portfolio" />
+
       <h1>Portfolio</h1>
 
       <div className="portfolio-grid">

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { submitContactForm } from "../services/api";
 import "../styles/Contact.css";
 import pricingPackages from "../data/pricingData";
+import PageTitle from "../components/PageTitle";
 
 const Contact = () => {
   const location = useLocation();
@@ -111,6 +112,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <PageTitle title="Contact Us" />
       <h1>Contact Us</h1>
       <h4>
         Have any questions or inquiries? Feel free to reach out using the form

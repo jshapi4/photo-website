@@ -2,10 +2,12 @@
 import React from "react";
 import testimonialData from "../data/testimonialData";
 import "../styles/Testimonials.css";
+import PageTitle from "../components/PageTitle";
 
 const Testimonials = () => {
   return (
     <div className="testimonials-page">
+      <PageTitle title="Testimonials" />
       <div className="testimonials-section">
         <h1>What Families Are Saying</h1>
         {testimonialData.map((testimonial, index) => (

@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "../styles/Home.css";
+import PageTitle from "../components/PageTitle";
 
 const Home = () => {
   return (
     <div className="home-page">
+      <PageTitle title="Home" />
       {/* Carousel Section */}
       <div className="carousel-container">
         <Carousel
@@ -70,7 +72,7 @@ const Home = () => {
       {/* Section Tiles */}
       <div className="polaroid-section">
         <Link to="/about" className="polaroid-tile">
-          <img src="/images/about.jpg" alt="About Polaroid" />
+          <img src="/assets/about.jpg" alt="About Polaroid" />
           <div className="polaroid-label">About</div>
         </Link>
         <Link to="/portfolio" className="polaroid-tile">

@@ -1,6 +1,7 @@
 // src/pages/Faqs.jsx
 import React, { useState } from "react";
 import "../styles/Faqs.css";
+import PageTitle from "../components/PageTitle";
 
 const faqs = [
   {
@@ -41,6 +42,7 @@ const Faqs = () => {
 
   return (
     <div className="faqs-page">
+      <PageTitle title="FAQs" />
       <h1>Frequently Asked Questions</h1>
       <p className="subtitle">
         Find answers to common questions below. If you don't see an answer to
