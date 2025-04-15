@@ -14,6 +14,16 @@
   --light-mauve: #c2889d;
 }
 
+#root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
 body {
   margin: 0;
   padding: 0;
