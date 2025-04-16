@@ -7,14 +7,8 @@
 
 .faqs-page h1 {
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   margin-bottom: 1rem;
-}
-
-.subtitle {
-  text-align: left;
-  color: #555;
-  margin-bottom: 2rem;
 }
 
 .faq-list {

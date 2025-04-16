@@ -10,7 +10,9 @@ const Pricing = () => {
     <div className="pricing-page">
       <PageTitle title="Pricing" />
       <h1>Pricing</h1>
-      <p>Check out my photography packages and rates.</p>
+      <div className="subtitle">
+        Check out my photography packages and rates.
+      </div>
       <div className="pricing-grid">
         {pricingPackages.map((pkg) => (
           <PricingCard key={pkg.id} package={pkg} />

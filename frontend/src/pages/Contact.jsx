@@ -114,10 +114,10 @@ const Contact = () => {
     <div className="contact-page">
       <PageTitle title="Contact Us" />
       <h1>Contact Us</h1>
-      <h4>
-        Have any questions or inquiries? Feel free to reach out using the form
-        below.
-      </h4>
+      <div className="subtitle">
+        Have any questions or ready to book a session? Feel free to reach out
+        using the form below.
+      </div>
 
       <div className="contact-form-container">
         {submitSuccess ? (
@@ -172,7 +172,7 @@ const Contact = () => {
             {/* Name and Email Fields */}
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="first_name">First Name *</label>
+                <label htmlFor="first_name">First Name*</label>
                 <input
                   type="text"
                   id="first_name"
@@ -188,7 +188,7 @@ const Contact = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="last_name">Last Name *</label>
+                <label htmlFor="last_name">Last Name*</label>
                 <input
                   type="text"
                   id="last_name"
@@ -206,7 +206,7 @@ const Contact = () => {
 
             {/* Email and Phone Fields */}
             <div className="form-group">
-              <label htmlFor="email">Email *</label>
+              <label htmlFor="email">Email*</label>
               <input
                 type="email"
                 id="email"
@@ -272,7 +272,7 @@ const Contact = () => {
 
             {/* Message Field */}
             <div className="form-group">
-              <label htmlFor="message">Message *</label>
+              <label htmlFor="message">Message*</label>
               <textarea
                 id="message"
                 name="message"

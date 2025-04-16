@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What should we wear for our family photo session?",
     answer:
-      "We recommend coordinating outfits with complementary colors rather than matching exactly. Soft, neutral tones photograph beautifully, and adding textures or subtle patterns can enhance your photos. Avoid clothing with large logos or busy prints.",
+      "I recommend coordinating outfits with complementary colors rather than matching exactly. Soft, neutral tones photograph beautifully, and adding textures or subtle patterns can enhance your photos. Avoid clothing with large logos or busy prints.",
   },
   {
     question: "Where will the session take place?",
