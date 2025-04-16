@@ -1,7 +1,7 @@
 // src/pages/About.jsx
 import React from "react";
 import "../styles/About.css";
-import headshot from "/assets/Emi-Camera.jpg";
+import headshot from "/assets/emi-photographer-bio.jpg";
 import PageTitle from "../components/PageTitle";
 
 const About = () => {

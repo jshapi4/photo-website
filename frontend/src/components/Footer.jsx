@@ -21,13 +21,6 @@ const Footer = () => {
           >
             Email
           </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Facebook
-          </a>
         </div>
 
         <div className="copyright">

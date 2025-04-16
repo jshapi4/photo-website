@@ -7,9 +7,8 @@ const pricingPackages = [
     description: "Perfect for quick portraits or seasonal shoots.",
     is_featured: false,
     items: [
-      { id: 1, description: "25-minute session" },
-      { id: 2, description: "10 edited photos" },
-      { id: 3, description: "Online gallery" },
+      { id: 1, description: "20-minute session" },
+      { id: 2, description: "5+ edited photos" },
     ],
   },
   {

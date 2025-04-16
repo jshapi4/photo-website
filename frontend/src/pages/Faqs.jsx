@@ -12,22 +12,22 @@ const faqs = [
   {
     question: "Where will the session take place?",
     answer:
-      "I offer both outdoor and indoor sessions. Outdoor sessions often take place at local parks, beaches, or meaningful family spots during golden hour for the best lighting. Indoor lifestyle sessions can also be done in the comfort of your home.",
+      "I offer both outdoor and indoor sessions. Outdoor sessions often take place at local parks, beaches, or meaningful family spots. Indoor lifestyle sessions can also be done in the comfort of your home.",
   },
   {
     question: "How long is a typical family session?",
     answer:
-      "A standard session usually lasts between 45 minutes. This allows plenty of time for candid moments, individual portraits, and group shots—without overwhelming the little ones!",
+      "A standard session usually lasts 45 minutes. This allows plenty of time for candid moments, individual portraits, and group shots—without overwhelming the little ones!",
   },
   {
     question: "When will we receive our photos?",
     answer:
-      "You'll receive a fully edited online gallery within 3 weeks of your session. I'll also include a few sneak peek images within a few days to get you excited!",
+      "You'll receive an online gallery within 48 hours of your session. Once you send me your picks, you will receive the final edited pictures within 2 weeks.",
   },
   {
     question: "What if my kids don't cooperate during the session?",
     answer:
-      "That's totally okay—and very common! My approach is relaxed and playful to help kids feel comfortable. I always capture beautiful moments, even in the chaos. Some of the best photos come from unposed, candid interactions.",
+      "I recommend my clients prepare kids for the session in advance and talk about what to expect when you are on the way to your session. If they still don't cooperate it's totally okay—and very common! My approach is relaxed and playful to help kids feel comfortable. I always capture beautiful moments, even in the chaos. Some of the best photos come from unposed, candid interactions.",
   },
 ];
 
