@@ -24,6 +24,13 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
+              src="/assets/land-park-all-3.jpg"
+              alt="Family of 3 walks in Land Park"
+            />
+          </div>
+          <div>
+            <img
+              className="carousel-image"
               src="/assets/dad-kid-horse-1.jpg"
               alt="Dad, his kid, and a horse"
             />

@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "How long is a typical family session?",
     answer:
-      "A standard session usually lasts 45 minutes. This allows plenty of time for candid moments, individual portraits, and group shots—without overwhelming the little ones!",
+      "A standard session usually lasts 40 minutes. This allows plenty of time for candid moments, individual portraits, and group shots—without overwhelming the little ones!",
   },
   {
     question: "When will we receive our photos?",

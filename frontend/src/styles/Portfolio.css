@@ -35,3 +35,12 @@
 .portfolio-image:hover {
   transform: scale(1.02);
 }
+
+/* Or if you prefer to change the color to something else */
+.yarl__button::after {
+  background-color: transparent !important;
+}
+
+.yarl__button:hover {
+  background-color: transparent !important;
+}

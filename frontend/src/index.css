@@ -54,7 +54,7 @@ h6 {
 button {
   padding: 0.625rem 0.9375rem; /* Shorthand with rem units */
   border: none;
-  background-color: var(--pink-main);
+  background-color: var(--light-mauve);
   color: var(--gray-dark);
   cursor: pointer;
   border-radius: 5px;
