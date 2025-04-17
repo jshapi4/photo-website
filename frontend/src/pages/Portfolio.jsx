@@ -30,6 +30,16 @@ const images = [
   "/assets/family-of-three-building.jpg",
   "/assets/fam-in-woods.jpg",
   "/assets/mom-and-baby-1.jpg",
+  "/assets/JK-001.JPEG",
+  "/assets/JK-002.JPEG",
+  "/assets/JK-003.JPEG",
+  "/assets/JK-004.JPEG",
+  "/assets/JK-005.JPEG",
+  "/assets/HZ-001.JPEG",
+  "/assets/HZ-002.JPEG",
+  "/assets/HZ-003.JPEG",
+  "/assets/HZ-004.JPEG",
+  "/assets/HZ-005.JPEG",
 ];
 
 const Portfolio = () => {
