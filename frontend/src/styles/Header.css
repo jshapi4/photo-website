@@ -9,7 +9,7 @@
 .header-container {
   max-width: 1200px;
   margin: auto;
-  padding: 1rem 2rem;
+  padding: 0.1rem 2rem 0.1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,11 @@
 }
 
 .logo {
-  text-decoration: none; /* gets rid of link underline */
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* adds space between image and text */
+  text-decoration: none; /* removes underline from link */
 }
 
 .logo h1 {
@@ -29,6 +33,10 @@
   letter-spacing: 0.5px;
 }
 
+.logo-image {
+  width: 80px;
+  height: auto;
+}
 .mobile-menu-btn {
   background: none;
   border: none;

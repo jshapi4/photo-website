@@ -24,42 +24,49 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/assets/land-park-all-3.jpg"
+              src="/assets/LP-003.jpg"
               alt="Family of 3 walks in Land Park"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/assets/dad-kid-horse-1.jpg"
+              src="/assets/PM-003.jpg"
               alt="Dad, his kid, and a horse"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/assets/land-park-water.jpg"
+              src="/assets/LP-001.jpg"
               alt="Family in Land Park walking by the water"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/assets/mom-and-baby-1.jpg"
+              src="/assets/CD-004.jpg"
               alt="Mom and her baby"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/assets/dad-and-mom-gaze.jpg"
-              alt="Family in the woods"
+              src="/assets/CP-001.jpg"
+              alt="Mom and dad gaze"
             />
           </div>
           <div>
             <img
               className="carousel-image"
-              src="/assets/baby-smiling-on-moms-lap.jpg"
+              src="/assets/PM-004.jpg"
+              alt="Mom and dad gaze"
+            />
+          </div>
+          <div>
+            <img
+              className="carousel-image"
+              src="/assets/CD-001.jpg"
               alt="Baby on mom's lap"
             />
           </div>
@@ -83,7 +90,7 @@ const Home = () => {
           <div className="polaroid-label">About</div>
         </Link>
         <Link to="/portfolio" className="polaroid-tile">
-          <img src="/assets/baby-boy-and-bubble.jpg" alt="Portfolio Polaroid" />
+          <img src="/assets/CD-002.jpg" alt="Portfolio Polaroid" />
           <div className="polaroid-label">Portfolio</div>
         </Link>
         {/* <Link to="/testimonials" className="polaroid-tile">

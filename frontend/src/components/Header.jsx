@@ -11,6 +11,11 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
+          <img
+            className="logo-image"
+            src="/assets/Emi_Shapiro_Logo.PNG"
+            alt="Emi Shapiro logo"
+          />
           <h1>Emi Shapiro Photography</h1>
         </Link>
 

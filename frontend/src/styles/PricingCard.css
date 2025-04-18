@@ -57,7 +57,7 @@
 
 .package-features li {
   margin-bottom: 0.5rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   position: relative;
 }
 
@@ -81,4 +81,10 @@
 
 .book-now-btn:hover {
   background-color: #007b6a;
+}
+
+@media (max-width: 600px) {
+  .package-features li {
+    padding-left: 1.75rem; /* more space for mobile */
+  }
 }
