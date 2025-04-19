@@ -9,7 +9,7 @@
 .header-container {
   max-width: 1200px;
   margin: auto;
-  padding: 0.1rem 2rem 0.1rem 2rem;
+  padding: 0.1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,60 +37,6 @@
   width: 80px;
   height: auto;
 }
-.mobile-menu-btn {
-  background: none;
-  border: none;
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  right: 2rem;
-  top: 1.5rem;
-  z-index: 101; /* Higher than the nav menu */
-}
-
-/* Hamburger styling */
-.hamburger {
-  position: relative;
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: #333;
-  transition: background 0.3s ease;
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 3px;
-  background: #333;
-  transition: transform 0.3s ease, top 0.3s ease;
-}
-
-.hamburger::before {
-  top: -8px;
-}
-
-.hamburger::after {
-  top: 8px;
-}
-
-/* Open state */
-.hamburger.open {
-  background: transparent;
-}
-
-.hamburger.open::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-.hamburger.open::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
 
 /* Desktop Navigation */
 .main-nav {
@@ -105,12 +51,6 @@
   gap: 1.5rem;
 }
 
-.main-nav a.active-link {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  color: var(--mauve);
-}
-
 .main-nav a {
   text-decoration: none;
   color: #333;
@@ -118,7 +58,12 @@
   position: relative; /* For the hover underline effect */
 }
 
-/* changes text color when hovering */
+.main-nav a.active-link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: var(--mauve);
+}
+
 .main-nav a:hover {
   color: var(--mauve);
 }
@@ -127,8 +72,7 @@
   width: 0; /* disables hover underline animation for the ACTIVE LINK */
 }
 
-/* Optional: Add an underline effect on hover for desktop */
-
+/* Adds an underline effect on hover for desktop */
 .main-nav a::after {
   content: "";
   position: absolute;
@@ -144,36 +88,117 @@
   width: 100%;
 }
 
-/* Mobile Styling */
+.mobile-menu-btn {
+  display: none; /* Hide by default on desktop */
+  position: absolute;
+  right: 2rem; /* Position on the right side */
+  top: 50%; /* Position at vertical center */
+  transform: translateY(-50%); /* Center it perfectly vertically */
+  z-index: 101;
+  background: none;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0.5rem 1rem;
     position: relative;
-    padding: 1rem;
   }
 
+  /* Logo container */
   .logo {
-    width: 70%;
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 0.5rem;
+    grid-column: 1;
   }
 
+  /* Logo image - positioned left */
+  .logo-image {
+    width: 50px;
+  }
+
+  /* Logo text - perfectly centered */
   .logo h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .mobile-menu-btn {
+    display: block; /* Display on mobile */
+  }
+
+  .mobile-menu-btn:focus,
+  .mobile-menu-btn:active {
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* Hamburger styling */
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: background 0.3s ease;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: transform 0.3s ease, top 0.3s ease;
+  }
+
+  .hamburger::before {
+    top: -8px;
+  }
+
+  .hamburger::after {
+    top: 8px;
+  }
+
+  .hamburger.open {
+    background: transparent;
+  }
+
+  .hamburger.open::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .hamburger.open::after {
+    transform: rotate(-45deg);
+    top: 0;
   }
 
   /* Mobile Navigation - Overlay */
   .main-nav {
     display: none;
     position: absolute;
-    top: 100%; /* Position it right below the header */
+    top: 100%;
     left: 0;
     right: 0;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 99;
     width: 100%;
-    padding: 0;
-    margin: 0;
   }
 
   .main-nav.open {
@@ -183,14 +208,11 @@
   .main-nav ul {
     flex-direction: column;
     width: 100%;
-    margin: 0;
-    padding: 0;
     gap: 0;
   }
 
   .main-nav li {
     width: 100%;
-    margin: 0;
     border-bottom: 1px solid #eee;
   }
 
@@ -198,31 +220,18 @@
     border-bottom: none;
   }
 
-  /* Show the hamburger button */
-  .mobile-menu-btn {
-    display: block;
-  }
-
-  .mobile-menu-btn:hover {
-    background-color: #f8f8f8;
-    border-radius: 4px; /* optional for a smoother look */
-  }
-
-  /* Override desktop styles for mobile */
   .main-nav a {
     display: block;
     padding: 15px 20px;
-    width: 100%;
     text-align: left;
+    width: 100%;
   }
 
-  /* Different hover effect for mobile */
   .main-nav a:hover {
     background-color: #f1f1f1;
     color: var(--mauve);
   }
 
-  /* Remove the underline effect for mobile */
   .main-nav a::after {
     display: none;
   }
