@@ -1,18 +1,11 @@
 const testimonials = [
   {
-    name: "Neil R.",
-    position: "Grandpa",
+    name: "Candace",
+    position: "Mother",
     quote:
-      "Emi captured the most precious moments with my granddaughter and our family in such a gentle, calming way. I'll cherish these photos forever!",
-    image: "/assets/grandpa-neil.jpeg",
+      "Emi is an absolute gift! Our family photo session with you was nothing short of magical. Your sweet, warm personality instantly put us at ease. My one and a half year old son was so smitten with you that he let you carry him and was more affectionate than he is with most people. That alone speaks to the special energy you bring! You made the whole experience feel so natural and effortless, like you were just a friend hanging out with us, capturing our joy without ever intruding on the moment. Your kindness and personable nature made it such a delight to work with you. And when we saw the photos? Oh, Emi, they took my breath away. Your talent is truly remarkable. The way you captured my son’s spark and our family’s love was beyond anything I could have imagined. It’s rare to find someone who’s not only so skilled at their craft but also so genuinely good hearted. Emi, you’re a treasure, and we can’t wait to work with you again. Thank you for giving us memories we’ll cherish forever!",
+    image: "/assets/CD-001.jpg",
   },
-  // {
-  //   name: "Jason L.",
-  //   position: "Father",
-  //   quote:
-  //     "Our toddler is a bundle of energy, but Emi made the whole session so easy and fun. The photos really captured his personality and our family’s bond.",
-  //   image: "/images/jason-portrait.jpg",
-  // },
   // {
   //   name: "Laura R.",
   //   position: "Expecting Mom",
