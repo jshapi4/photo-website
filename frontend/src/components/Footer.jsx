@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -12,14 +14,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Instagram
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
           <a
             href="mailto:emishapirophotography@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Email
+            <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </a>
         </div>
 
