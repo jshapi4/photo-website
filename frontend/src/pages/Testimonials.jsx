@@ -5,24 +5,26 @@ import PageTitle from "../components/PageTitle";
 
 const Testimonial = ({ quote, name, position, image }) => {
   const [expanded, setExpanded] = useState(false);
-  const previewLength = 150;
+  const previewLength = 200;
   const needsTruncation = quote.length > previewLength;
 
+  const toggleExpand = () => {
+    if (needsTruncation) {
+      setExpanded(!expanded);
+    }
+  };
+
   return (
-    <div className="testimonial-card">
+    <div
+      className={`testimonial-card ${needsTruncation ? "expandable" : ""} ${
+        expanded ? "expanded" : ""
+      }`}
+      onClick={toggleExpand}
+    >
       <div className="testimonial-quote">
         {expanded || !needsTruncation
           ? quote
           : `${quote.substring(0, previewLength)}...`}
-
-        {needsTruncation && (
-          <button
-            className="read-toggle"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? "Read Less" : "Read More"}
-          </button>
-        )}
       </div>
 
       <div className="testimonial-author">
@@ -36,6 +38,12 @@ const Testimonial = ({ quote, name, position, image }) => {
           {position && <p>{position}</p>}
         </div>
       </div>
+
+      {needsTruncation && (
+        <div className="expand-indicator">
+          {expanded ? "Click to collapse" : "Click to read more"}
+        </div>
+      )}
     </div>
   );
 };

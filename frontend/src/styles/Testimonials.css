@@ -11,6 +11,7 @@
 }
 
 .testimonial-card {
+  position: relative;
   background: white;
   border: 1px solid #ddd;
   border-left: 5px solid #4db8ff;
@@ -22,6 +23,20 @@
   max-width: 700px;
 }
 
+.testimonial-card.expandable {
+  cursor: pointer;
+}
+
+.testimonial-card.expandable:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Visual indication when expanded */
+.testimonial-card.expanded {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
 .testimonial-card:nth-child(even) {
   border-left-color: #f28ab2;
 }
@@ -30,7 +45,25 @@
   transform: translateY(-5px);
 }
 
+/* Subtle indicator to show card is clickable */
+.expand-indicator {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  font-size: 0.75rem;
+  color: #888;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* Show the indicator more prominently on hover */
+.testimonial-card:hover .expand-indicator {
+  opacity: 1;
+  color: #555;
+}
+
 .testimonial-quote {
+  transition: all 0.3s ease;
   font-style: italic;
   font-size: 1.2rem;
   color: #444;

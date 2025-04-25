@@ -13,13 +13,13 @@ const testimonials = [
       "I was lucky to be one of the few families chosen for a photography session as this talented photographer builds her portfolio, and I’m so glad I took the opportunity. She made the entire experience easy and fun from start to finish. I especially appreciated how quickly she delivered the final photos—such a rare and refreshing quality! She also had a fantastic eye for natural, candid moments and offered creative pose ideas that brought out the best in our family. The photos truly captured who we are, and we’ll treasure them for years to come.",
     image: "/assets/JK-004.JPEG",
   },
-  // {
-  //   name: "Rebecca S.",
-  //   position: "Mother of Two",
-  //   quote:
-  //     "Emi made our family photoshoot feel like a fun family outing! She captured our kids’ personalities and made the whole experience enjoyable and stress-free.",
-  //   image: "/images/rebecca-portrait.jpg",
-  // },
+  {
+    name: "The Mangans",
+    position: "Family",
+    quote:
+      "We recently had the pleasure of having candid family photos taken by Emi at the UC Davis Arboretum, near the horses—and the experience was absolutely wonderful. She has such a natural eye for capturing genuine moments, and every photo reflects the love and connection in our little family. The setting was perfect, but it was truly her talent and calming presence that made the session feel so natural and like us. On top of that, her turnaround time was incredibly fast, and we were blown away by the quality of the final images. We will cherish these photos forever. I can’t recommend her enough!",
+    image: "/assets/PM-005.jpg",
+  },
   // {
   //   name: "Katie B.",
   //   position: "New Mom",
