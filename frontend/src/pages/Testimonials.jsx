@@ -1,8 +1,44 @@
-// src/pages/Testimonials.jsx
-import React from "react";
+import React, { useState } from "react";
 import testimonialData from "../data/testimonialData";
 import "../styles/Testimonials.css";
 import PageTitle from "../components/PageTitle";
+
+const Testimonial = ({ quote, name, position, image }) => {
+  const [expanded, setExpanded] = useState(false);
+  const previewLength = 150;
+  const needsTruncation = quote.length > previewLength;
+
+  return (
+    <div className="testimonial-card">
+      <div className="testimonial-quote">
+        {expanded || !needsTruncation
+          ? quote
+          : `${quote.substring(0, previewLength)}...`}
+
+        {needsTruncation && (
+          <button
+            className="read-toggle"
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded ? "Read Less" : "Read More"}
+          </button>
+        )}
+      </div>
+
+      <div className="testimonial-author">
+        {image && (
+          <div className="testimonial-image">
+            <img src={image} alt={name} />
+          </div>
+        )}
+        <div className="testimonial-info">
+          <h4>{name}</h4>
+          {position && <p>{position}</p>}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Testimonials = () => {
   return (
@@ -11,20 +47,7 @@ const Testimonials = () => {
       <div className="testimonials-section">
         <h1>What Families Are Saying</h1>
         {testimonialData.map((testimonial, index) => (
-          <div className="testimonial-card" key={index}>
-            <div className="testimonial-quote">{testimonial.quote}</div>
-            <div className="testimonial-author">
-              {testimonial.image && (
-                <div className="testimonial-image">
-                  <img src={testimonial.image} alt={testimonial.name} />
-                </div>
-              )}
-              <div className="testimonial-info">
-                <h4>{testimonial.name}</h4>
-                {testimonial.position && <p>{testimonial.position}</p>}
-              </div>
-            </div>
-          </div>
+          <Testimonial key={index} {...testimonial} />
         ))}
       </div>
     </div>
