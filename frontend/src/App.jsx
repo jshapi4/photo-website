@@ -10,27 +10,30 @@ import Pricing from "./pages/Pricing";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Header />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/faqs" element={<Faqs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div>
+          <Header />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/faqs" element={<Faqs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

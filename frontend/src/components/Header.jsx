@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import "../styles/Header.css";
@@ -7,10 +7,44 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
+  const navRef = useRef(null);
+  const buttonRef = useRef(null);
+  const logoRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    }
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  const handleLogoClick = () => {
+    // Close the menu if we're not already on the home page
+    if (location.pathname !== "/") {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" ref={logoRef} onClick={handleLogoClick}>
           <img
             className="logo-image"
             src="/assets/Emi_Shapiro_Logo.PNG"
@@ -21,12 +55,13 @@ const Header = () => {
 
         <button
           className="mobile-menu-btn"
+          ref={buttonRef}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className={`hamburger ${menuOpen ? "open" : ""}`}></span>
         </button>
 
-        <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
+        <nav className={`main-nav ${menuOpen ? "open" : ""}`} ref={navRef}>
           <ul>
             <li>
               <Link
