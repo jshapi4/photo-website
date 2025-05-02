@@ -20,13 +20,13 @@ const testimonials = [
       '"We recently had the pleasure of having candid family photos taken by Emi at the UC Davis Arboretum, near the horses—and the experience was absolutely wonderful. She has such a natural eye for capturing genuine moments, and every photo reflects the love and connection in our little family. The setting was perfect, but it was truly her talent and calming presence that made the session feel so natural and like us. On top of that, her turnaround time was incredibly fast, and we were blown away by the quality of the final images. We will cherish these photos forever. I can’t recommend her enough!"',
     image: "/assets/PM-005.jpg",
   },
-  // {
-  //   name: "Katie B.",
-  //   position: "New Mom",
-  //   quote:
-  //     "The newborn photos Emi took of my baby and me are so beautiful. She really captured the love and emotion of those first few days — it’s a memory I’ll always cherish.",
-  //   image: "/images/katie-portrait.jpg",
-  // },
+  {
+    name: "Hannah",
+    position: "Family Session",
+    quote:
+      '"Our session was so great! We felt so at ease and Emi captured our little family so perfectly. It was really nice to be guided through what to do and still have casual fun family photos."',
+    image: "/assets/HZ-004.JPEG",
+  },
   // {
   //   name: "Michael D.",
   //   position: "Father",
