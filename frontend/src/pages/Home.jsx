@@ -24,27 +24,6 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
-              src="/assets/LP-003.jpg"
-              alt="Family of 3 walks in Land Park"
-            />
-          </div>
-          <div>
-            <img
-              className="carousel-image"
-              src="/assets/PM-003.jpg"
-              alt="Dad, his kid, and a horse"
-            />
-          </div>
-          <div>
-            <img
-              className="carousel-image"
-              src="/assets/LP-001.jpg"
-              alt="Family in Land Park walking by the water"
-            />
-          </div>
-          <div>
-            <img
-              className="carousel-image"
               src="/assets/CD-004.jpg"
               alt="Mom and her baby"
             />
@@ -59,8 +38,31 @@ const Home = () => {
           <div>
             <img
               className="carousel-image"
+              src="/assets/LP-001.jpg"
+              alt="Family in Land Park walking by the water"
+            />
+          </div>
+          <div>
+            <img
+              className="carousel-image"
+              src="/assets/PM-003.jpg"
+              alt="Dad, his kid, and a horse"
+            />
+          </div>
+
+          <div>
+            <img
+              className="carousel-image"
+              src="/assets/LP-003.jpg"
+              alt="Family of 3 walks in Land Park"
+            />
+          </div>
+
+          <div>
+            <img
+              className="carousel-image"
               src="/assets/PM-004.jpg"
-              alt="Mom and dad gaze"
+              alt="Mom and dad on bench"
             />
           </div>
           <div>
