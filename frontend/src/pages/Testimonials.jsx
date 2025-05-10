@@ -3,7 +3,7 @@ import testimonialData from "../data/testimonialData";
 import "../styles/Testimonials.css";
 import PageTitle from "../components/PageTitle";
 
-const Testimonial = ({ quote, name, position, image }) => {
+const Testimonial = ({ quote, name, session, image }) => {
   const [expanded, setExpanded] = useState(false);
   const previewLength = 200;
   const needsTruncation = quote.length > previewLength;
@@ -35,7 +35,7 @@ const Testimonial = ({ quote, name, position, image }) => {
         )}
         <div className="testimonial-info">
           <h4>{name}</h4>
-          {position && <p>{position}</p>}
+          {session && <p>{session}</p>}
         </div>
       </div>
 
