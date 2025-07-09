@@ -34,6 +34,13 @@ const testimonials = [
       '"We recently had the pleasure of having candid family photos taken by Emi at the UC Davis Arboretum, near the horses—and the experience was absolutely wonderful. She has such a natural eye for capturing genuine moments, and every photo reflects the love and connection in our little family. The setting was perfect, but it was truly her talent and calming presence that made the session feel so natural and like us. On top of that, her turnaround time was incredibly fast, and we were blown away by the quality of the final images. We will cherish these photos forever. I can’t recommend her enough!"',
     image: "/assets/PM-005.jpg",
   },
+  {
+    name: "Jennifer",
+    session: "Mini Session",
+    quote:
+      '"Emi was so wonderful and made us feel comfortable as soon as we met her. She was so patient with all five of us and took her time with getting us in the right positions. I will definitely be booking again."',
+    image: "/assets/JM-003.jpg",
+  },
 ];
 
 export default testimonials;

@@ -44,6 +44,11 @@ const images = [
   "/assets/HZ-003.JPEG",
   "/assets/HZ-004.JPEG",
   "/assets/HZ-005.JPEG",
+  "/assets/JM-001.jpg",
+  "/assets/JM-002.jpg",
+  "/assets/JM-003.jpg",
+  "/assets/JM-004.jpg",
+  "/assets/JM-005.jpg",
 ];
 
 const Portfolio = () => {

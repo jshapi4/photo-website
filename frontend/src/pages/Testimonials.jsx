@@ -5,7 +5,7 @@ import PageTitle from "../components/PageTitle";
 
 const Testimonial = ({ quote, name, session, image }) => {
   const [expanded, setExpanded] = useState(false);
-  const previewLength = 200;
+  const previewLength = 220;
   const needsTruncation = quote.length > previewLength;
 
   const toggleExpand = () => {
