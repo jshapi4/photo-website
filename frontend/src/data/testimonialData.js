@@ -41,6 +41,13 @@ const testimonials = [
       '"Emi was so wonderful and made us feel comfortable as soon as we met her. She was so patient with all five of us and took her time with getting us in the right positions. I will definitely be booking again."',
     image: "/assets/JM-003.jpg",
   },
+  {
+    name: "Elizabeth",
+    session: "Family Session",
+    quote:
+      '"We had a great experience with Emi! It was our toddler’s first time doing a photography session, and Emi was wonderful—patient, flexible, and great at working with our girl’s constant movement. Emi guided us through her ideas in a way that felt natural and easy, but was also really open to hearing and incorporating our thoughts. We truly appreciated how comfortable and relaxed she made the whole process. The session flew by! Our final photographs turned out better than we could have imagined. Highly highly recommend!"',
+    image: "/assets/LP-002.jpg",
+  },
 ];
 
 export default testimonials;
