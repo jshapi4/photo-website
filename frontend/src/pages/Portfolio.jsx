@@ -9,6 +9,21 @@ import PageTitle from "../components/PageTitle";
 import "../styles/Portfolio.css";
 
 const images = [
+  "/assets/JM-001.jpg",
+  "/assets/JM-002.jpg",
+  "/assets/JM-003.jpg",
+  "/assets/JM-004.jpg",
+  "/assets/JM-005.jpg",
+  "/assets/JK-003.JPEG",
+  "/assets/JK-001.JPEG",
+  "/assets/JK-002.JPEG",
+  "/assets/JK-004.JPEG",
+  "/assets/JK-005.JPEG",
+  "/assets/HZ-001.JPEG",
+  "/assets/HZ-002.JPEG",
+  "/assets/HZ-003.JPEG",
+  "/assets/HZ-004.JPEG",
+  "/assets/HZ-005.JPEG",
   "/assets/CP-001.jpg",
   "/assets/CP-002.jpg",
   "/assets/CP-003.jpg",
@@ -34,21 +49,6 @@ const images = [
   "/assets/PM-004.jpg",
   "/assets/PM-005.jpg",
   "/assets/PM-006.jpg",
-  "/assets/JK-001.JPEG",
-  "/assets/JK-002.JPEG",
-  "/assets/JK-003.JPEG",
-  "/assets/JK-004.JPEG",
-  "/assets/JK-005.JPEG",
-  "/assets/HZ-001.JPEG",
-  "/assets/HZ-002.JPEG",
-  "/assets/HZ-003.JPEG",
-  "/assets/HZ-004.JPEG",
-  "/assets/HZ-005.JPEG",
-  "/assets/JM-001.jpg",
-  "/assets/JM-002.jpg",
-  "/assets/JM-003.jpg",
-  "/assets/JM-004.jpg",
-  "/assets/JM-005.jpg",
 ];
 
 const Portfolio = () => {

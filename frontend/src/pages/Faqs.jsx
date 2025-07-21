@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "When will we receive our photos?",
     answer:
-      "You'll receive an online gallery within 48 hours of your session. Once you send me your picks, you will receive the final edited pictures within 2 weeks.",
+      "You'll receive your edited gallery within 2 weeks after your session.",
   },
   {
     question: "What if my kids don't cooperate during the session?",
