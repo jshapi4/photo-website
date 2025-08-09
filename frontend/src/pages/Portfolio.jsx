@@ -9,6 +9,12 @@ import PageTitle from "../components/PageTitle";
 import "../styles/Portfolio.css";
 
 const images = [
+  "/assets/ESP.Jacquelyn-6.jpg",
+  "/assets/ESP.Jacquelyn-8.jpg",
+  "/assets/ESP.Jacquelyn-13.jpg",
+  "/assets/ESP.Jacquelyn-15.jpg",
+  "/assets/ESP.Jacquelyn-16.jpg",
+  "/assets/ESP.Jacquelyn-2.jpg",
   "/assets/JM-001.jpg",
   "/assets/JM-002.jpg",
   "/assets/JM-003.jpg",
