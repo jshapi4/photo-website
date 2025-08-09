@@ -112,8 +112,8 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <PageTitle title="Contact Us" />
-      <h1>Contact Us</h1>
+      <PageTitle title="Contact" />
+      <h1>Contact Me</h1>
       <div className="subtitle">
         Have any questions or ready to book a session? Feel free to reach out
         using the form below.
