@@ -9,7 +9,10 @@ const NotFound = () => {
     <div className="not-found">
       <PageTitle title="404 - Page Not Found" />
       <h1>404</h1>
-      <p>Oops! The page you are looking for does not exist.</p>
+      <p>
+        Oops! The page you are looking for does not exist. Reach out to
+        webmaster@emishapirophotography.com with any concerns.
+      </p>
       <Link to="/" className="home-link">
         Go back to Home
       </Link>
