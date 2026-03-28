@@ -7,14 +7,14 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest # The environment for the runner
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 # Check out the repository's code
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "20" # Set the Node.js version (use the version that your project uses)
 
@@ -22,15 +22,15 @@ jobs:
       - name: Install dependencies and build
         working-directory: ./frontend
         run: |
-          npm install
+          npm ci
           npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3 # GitHub Actions for deploying to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }} # GitHub automatically provides this token for authentication
-          publish_dir: ./frontend/dist # Path to the build directory
-          publish_branch: gh-pages # The branch to deploy to (GitHub Pages)
-          user_name: "J. Shapiro" # The name to appear in the commit
-          user_email: "jshapi4@wgu.edu" # The email to appear in the commit
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./frontend/dist
+          publish_branch: gh-pages
+          user_name: "J. Shapiro"
+          user_email: "jshapi4@users.noreply.github.com"
           cname: emishapirophotography.com
